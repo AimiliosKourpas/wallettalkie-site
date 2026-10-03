@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy · Wallet Talkie</title>
+<meta name="description" content="How Wallet Talkie processes your information.">
+<link rel="stylesheet" href="../assets/site.css">
+<link rel="icon" type="image/png" sizes="512x512" href="../assets/icon-512.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/icon-180.png">
+<meta name="theme-color" content="#0b1030">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="../"><img src="../assets/icon-180.png" alt="" width="36" height="36"><span>Wallet Talkie</span></a>
+  <nav aria-label="Site"><a href="../">Home</a><a href="../privacy/" aria-current="page">Privacy</a><a href="../terms/">Terms</a><a href="../support/">Support</a></nav>
+</header>
+<main>
+
+<article class="legal">
+<h1>Privacy Policy</h1>
+<p class="updated">Last updated: October 4, 2026</p>
+<p>This policy explains what the Wallet Talkie iPhone app does with information. Wallet Talkie is developed and operated by an individual developer. You can contact us at <a href="mailto:wallettalkie@gmail.com">wallettalkie@gmail.com</a>.</p>
+
+<h2>1. What we process</h2>
+<ul>
+  <li><strong>Sign-in information.</strong> When you sign in with Apple or Google, we receive the identifier and email address (or Apple's private relay address) that the provider shares, and the name if the provider shares one.</li>
+  <li><strong>Financial records you enter.</strong> Accounts and their names and opening balances, income and expense transactions, amounts, dates, categories, notes, transfers between your accounts, and recurring entries such as subscriptions and bills.</li>
+  <li><strong>Learned patterns.</strong> From the entries you confirm, the app remembers merchant names, typical amounts and categories, and corrections you made, so it can suggest future entries. It also keeps short, informational insights, such as an upcoming recurring payment.</li>
+  <li><strong>Shared expenses.</strong> If you use Split the bill, the group names, people's names, amounts and notes are kept on your device only. When you record a real transaction linked to a shared expense, that transaction is stored on our server, and a note may name a participant.</li>
+  <li><strong>Voice entries.</strong> See section 4.</li>
+  <li><strong>Usage counts.</strong> The server counts how many voice entries each account has made in a calendar month, to enforce the monthly limit.</li>
+  <li><strong>Device preferences.</strong> Your theme, whether you have finished the first-run walkthrough, and whether App Lock is on. These are stored on your device.</li>
+</ul>
+
+<h2>2. Why we process it</h2>
+<p>We use this information to run the app: to sign you in, keep your records, calculate balances and summaries, suggest entries, show insights, and delete your data when you ask. We do not use it for advertising, and we do not build advertising profiles.</p>
+
+<h2>3. Sign-in providers</h2>
+<p>Sign-in is handled by Supabase Auth, using Sign in with Apple or Google. When you sign in with Apple, the app receives a one-time authorization code. Our server exchanges that code with Apple for a refresh token, keeps the token on the server only, and never sends it to your device. When you delete your account, we revoke that token with Apple. Apple and Google process your sign-in under their own privacy policies.</p>
+
+<h2>4. Voice entries and speech recognition</h2>
+<p>Voice entry uses the speech-recognition service of your operating system. On iPhone, that is Apple's speech-recognition framework. On supported Android devices, it can be Google's speech-recognition service. Speech recognition is not always on-device: the operating system decides whether to use its server. Apple or Google processes your voice under its own terms.</p>
+<p>Wallet Talkie does not store raw voice recordings. The app receives only the resulting text, which we call the transcript. To interpret the requested entry, the transcript is sent to our server together with the names of your accounts and categories. The server does not write transcripts to our database. The entry you save, which may include the amount and a note, is stored as a transaction.</p>
+
+<h2>5. Where data is stored and who processes it</h2>
+<ul>
+  <li><strong>Supabase</strong> hosts our database, authentication and server functions. Our production project is in the <strong>eu-west-1 (Ireland)</strong> region.</li>
+  <li><strong>Apple</strong> provides sign-in and iOS speech recognition.</li>
+  <li><strong>Google</strong> provides sign-in and, on Android, speech recognition.</li>
+  <li><strong>Expo</strong> may be used to deliver app updates. A request to Expo's update service can include technical details needed to deliver the update, such as the app version and platform. Financial records are not sent in that request.</li>
+</ul>
+<p>We do not use advertising networks, analytics services, crash-reporting SDKs or behavioural tracking tools in this version of the app.</p>
+
+<h2>6. Data stored on your device</h2>
+<ul>
+  <li>Your sign-in session, kept in the device's secure storage.</li>
+  <li>Shared-expense groups, kept in app storage on the device only and not uploaded.</li>
+  <li>Preferences: theme, walkthrough status and App Lock setting.</li>
+</ul>
+<p>When your account is deleted, the account-specific data on your device is removed, including shared-expense groups and account-specific flags. Device preferences such as theme, walkthrough status and App Lock may remain, because they describe the device rather than your account.</p>
+
+<h2>7. Biometrics and App Lock</h2>
+<p>App Lock can use Face ID, Touch ID or your device passcode. Authentication is performed by the operating system. Wallet Talkie does not receive, store or see your biometric data.</p>
+
+<h2>8. Location, contacts, camera and photos</h2>
+<p>Wallet Talkie does not access your location, contacts or camera. It does not access your photo library in this version. Some iOS system settings for the app may mention photos because a component included in the app requires that declaration; the app does not request or use photo-library access.</p>
+
+<h2>9. Advertising, tracking and sale of data</h2>
+<p>Wallet Talkie does not contain advertising, does not use advertising identifiers, does not show App Tracking Transparency prompts, and does not track you across other companies' apps or websites. We do not sell personal data.</p>
+
+<h2>10. AI features</h2>
+<p>AI features are not available to users in this version. Your data is not sent to an AI provider by this version of the app. If we introduce any feature that sends your data to an AI provider, we will update this policy before that feature is turned on.</p>
+
+<h2>11. Retention and deletion</h2>
+<p>We keep your data for as long as your account exists. You can delete your account from inside the app. Deletion removes your account and the associated server-side data, revokes your Apple authorization where one was issued, and clears account-specific data on your device.</p>
+<p>Some copies may remain for a limited time. Apple and Google keep their own records of sign-ins under their own policies, and our hosting provider may keep backups until they expire on its standard schedule. We cannot delete data that a third party is independently required to keep.</p>
+
+<h2>12. Security</h2>
+<p>Connections to our server use encryption in transit. Each account can only read and change its own records, enforced by row-level security in the database. Server-side secrets are kept on the server and are never included in the app. No system is perfectly secure, so please keep your device and your Apple or Google account protected.</p>
+
+<h2>13. International processing</h2>
+<p>Our database is hosted in Ireland. Apple, Google and Expo may process information in other countries under their own terms and safeguards.</p>
+
+<h2>14. Children</h2>
+<p>Wallet Talkie is not intended for children. We do not knowingly collect personal information from children. If you believe a child has given us information, contact us and we will delete it.</p>
+
+<h2>15. Your rights</h2>
+<p>Depending on where you live, you may have the right to access, correct, delete or export your personal data, to object to or restrict some processing, and to withdraw consent. You can use the in-app features for most of this, or contact us at <a href="mailto:wallettalkie@gmail.com">wallettalkie@gmail.com</a>. We will respond within a reasonable time.</p>
+
+<h2>16. Changes to this policy</h2>
+<p>We may update this policy. The date at the top shows when it last changed. If a change is significant, we will say so in the app or on this page before it takes effect.</p>
+
+<h2>17. Contact</h2>
+<p>Questions about privacy: <a href="mailto:wallettalkie@gmail.com">wallettalkie@gmail.com</a>.</p>
+</article>
+
+</main>
+<footer class="foot">
+  <p>Wallet Talkie 0.1.0 · Personal finance tracking · <a href="mailto:wallettalkie@gmail.com">wallettalkie@gmail.com</a></p>
+  <p>Wallet Talkie is not a bank and does not provide banking, investment, tax, accounting or legal advice.</p>
+</footer>
+</body>
+</html>
